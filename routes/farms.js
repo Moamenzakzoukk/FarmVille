@@ -81,7 +81,6 @@ router.put('/:id', async (req, res) => {
             updatesForDB.Salinity = incomingData.salinity; // (salinity -> Salinity)
         }
 
-        // طباعة البيانات "بعد" الترجمة للتأكد
         console.log('Data MAPPED for DB:', updatesForDB);
 
         // 3. تحديث قاعدة البيانات باستخدام الكائن "المُترجَم"
